@@ -18,14 +18,6 @@ namespace BDDTests.StepDefinitions
         private double? _payment;
         private string? _details;
 
-        // Given steps
-
-
-        // When steps
-
-
-        // Then steps
-
 
     }
 
