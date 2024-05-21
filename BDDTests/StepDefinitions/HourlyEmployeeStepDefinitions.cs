@@ -18,6 +18,23 @@ namespace BDDTests.StepDefinitions
         private double? _payment;
         private string? _details;
 
+        // Given steps
+
+        /*
+         * Create a method 'GivenTheHourlyRateIs10' is a Given step that sets the hourly rate of the employee to 10.
+         * It creates a new instance of the HourlyEmployee class and sets the hourly rate to $10 and the number of hours worked to 0.
+         * Provide all parameters when creating a new HourlyEmployee. 
+         * Example:
+         * _employee = new HourlyEmployee(null, null, null, null, null, null, 10, 0);
+         */
+
+
+
 
     }
+
+
+
+
+
 }
