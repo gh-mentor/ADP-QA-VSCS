@@ -80,6 +80,21 @@ namespace UITest
             }
         }
 
+        // Create a test method 'SearchForEmployeeId0_ShouldFail' to assert that searching for an employee with id 0 fails
+        // Example: https://localhost:7088/Employee/Details/0 should return a 404 error
+        [TestMethod]
+        public void SearchForEmployeeId0_ShouldFail()
+        {
+            try
+            {
+                _driver?.Navigate().GoToUrl("https://localhost:7088/Employee/Details/0");
+            }
+            catch (Exception)
+            {
+                Assert.Fail("Search for employee with id 0 failed");
+            }
+        }
+
 
 
         [TestCleanup]

@@ -10,13 +10,15 @@ using FluentAssertions;
 
 namespace BDDTests.StepDefinitions
 {
+    /// <summary>
+    /// Represents the step definitions for the HourlyEmployee class.
+    /// </summary>
     [Binding]
     public class HourlyEmployeeSteps
     {
         private HourlyEmployee? _employee;
         private double? _payment;
         private string? _details;
-
 
         // TODO: Add the 'WhenTheHoursWorkedIs40' method here and implement the 'Given' step
 
@@ -32,7 +34,6 @@ namespace BDDTests.StepDefinitions
         {
             _employee = new HourlyEmployee(null, null, null, null, null, null, 10, 0);
         }
-
 
         // TODO: Add the 'WhenTheHoursWorkedIs40' method here and implement the 'Given' step
 
@@ -51,11 +52,11 @@ namespace BDDTests.StepDefinitions
         // TODO: Add the 'WhenThePaymentIsCalculated' method here and implement the 'When' step
 
         /*
-*       * This is a 'When' step.
-*       * Create a method named 'WhenThePaymentIsCalculated'.
-*       * Details:
-*       * This method calculates the payment for the employee instance created in the previous step and stores it in the '_payment' field.
-*       */
+         * This is a 'When' step.
+         * Create a method named 'WhenThePaymentIsCalculated'.
+         * Details:
+         * This method calculates the payment for the employee instance created in the previous step and stores it in the '_payment' field.
+         */
         [When(@"the payment is calculated")]
         public void WhenThePaymentIsCalculated()
         {
@@ -76,24 +77,15 @@ namespace BDDTests.StepDefinitions
             _payment.Should().Be(400);
         }
 
-        // TODO: Add the 'ThenTheEmployeeDetailsShouldBeDisplayed' asserts that the payment is $400.
-
-        /*
-         * This is a 'Then' step.
-         * Create a method named 'ThenTheEmployeeDetailsShouldBeDisplayed'.
-         * Details:
-         * This method asserts that the employee details retrieved from the employee instance created in the previous step contains the hourly rate and hours worked.
-        */
+        /// <summary>
+        /// Asserts that the employee details are displayed.
+        /// </summary>
         [Then(@"the employee details should be displayed")]
         public void ThenTheEmployeeDetailsShouldBeDisplayed()
         {
             _details = _employee?.EmployeeDetails;
             _details.Should().Contain("Hourly Rate: 10, Hours Worked: 40");
         }
-
-
-
-
     }
 
 }
