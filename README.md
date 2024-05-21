@@ -1,9 +1,13 @@
 ## Welcome to GitHub Copilot Training for the ADP QA Team
 ### VS C# / SpecFlow / Selenium
 
-Instructor: Andrew Scoppa
+Instructor: Mr. Andrew Scoppa
 
-Email: v-ascoppa@microsoft.com andrew.scoppa@atmosera.com
+Emails: 
+
+v-ascoppa@microsoft.com
+
+andrew.scoppa@atmosera.com
 
 GH handle:  andrew-scoppa
 
