@@ -1,7 +1,6 @@
 ﻿/*
- * This file contains test methods for an Hourly Employee.
- * It uses the SpecFlow framework to define the steps for the test scenario.
- * 
+ * This file contains test methods for the the 'HourlyEmployee' class in the 'PayrollLibrary'.
+ * It uses the SpecFlow framework and MsTest for testing.
  */
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -19,10 +18,7 @@ namespace BDDTests.StepDefinitions
         private string? _details;
 
 
+
     }
-
-
-
-
 
 }
